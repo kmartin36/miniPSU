@@ -375,7 +375,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <text x="-1.925" y="-1.275" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="3.225" y="-1.275" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
-<package name="MSOP-8">
+<package name="MSOP-8-NOPAD">
 <wire x1="-1.425" y1="1.4067" x2="1.425" y2="1.4067" width="0.2032" layer="21"/>
 <wire x1="1.425" y1="1.4067" x2="1.425" y2="-1.4067" width="0.2032" layer="21"/>
 <wire x1="1.425" y1="-1.4067" x2="-1.425" y2="-1.4067" width="0.2032" layer="21"/>
@@ -389,7 +389,6 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <smd name="6" x="0.325" y="2.1" dx="0.4" dy="1.6" layer="1" rot="R180"/>
 <smd name="7" x="-0.325" y="2.1" dx="0.4" dy="1.6" layer="1" rot="R180"/>
 <smd name="8" x="-0.975" y="2.1" dx="0.4" dy="1.6" layer="1" rot="R180"/>
-<smd name="TH" x="0" y="0" dx="1.89" dy="1.57" layer="1" stop="no" cream="no"/>
 <text x="-1.625" y="-2.275" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="2.925" y="-2.275" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 <rectangle x1="-1.125" y1="-2.5" x2="-0.825" y2="-1.4867" layer="51"/>
@@ -400,8 +399,6 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de</description>
 <rectangle x1="0.175" y1="1.4868" x2="0.475" y2="2.5001" layer="51" rot="R180"/>
 <rectangle x1="-0.475" y1="1.4868" x2="-0.175" y2="2.5001" layer="51" rot="R180"/>
 <rectangle x1="-1.125" y1="1.4868" x2="-0.825" y2="2.5001" layer="51" rot="R180"/>
-<rectangle x1="-0.945" y1="-0.785" x2="0.945" y2="0.785" layer="29"/>
-<rectangle x1="-1" y1="-0.85" x2="1" y2="0.85" layer="31"/>
 </package>
 </packages>
 </library>
@@ -873,7 +870,7 @@ design rules under a new name.</description>
 <element name="C27" library="GT-IEEE" package="C0603" value="0.1u" x="3.556" y="35.687" rot="R270"/>
 <element name="JP4" library="SparkFun-Connectors" package="1X03_LOCK" value="" x="2.159" y="42.545" rot="R90"/>
 <element name="JP5" library="SparkFun-Connectors" package="1X03_LOCK" value="" x="20.447" y="47.752" rot="R180"/>
-<element name="U$5" library="GT-IEEE" package="MSOP-8" value="LTC6655" x="9.271" y="45.339" rot="R90"/>
+<element name="U$5" library="GT-IEEE" package="MSOP-8-NOPAD" value="LTC6655" x="9.271" y="45.339" rot="R90"/>
 <element name="C28" library="GT-IEEE" package="C0603" value="0.1u" x="13.208" y="45.339" rot="R90"/>
 <element name="C29" library="GT-IEEE" package="C0603" value="0.1u" x="10.541" y="48.133"/>
 <element name="C8" library="GT-IEEE" package="C0603" value="0.1u" x="3.556" y="32.639" rot="R90"/>
@@ -1169,7 +1166,6 @@ design rules under a new name.</description>
 <contactref element="JP5" pad="3"/>
 <contactref element="U$5" pad="4"/>
 <contactref element="U$5" pad="8"/>
-<contactref element="U$5" pad="TH"/>
 <contactref element="U$5" pad="3"/>
 <contactref element="U$5" pad="5"/>
 <contactref element="C28" pad="2"/>
@@ -1190,12 +1186,9 @@ design rules under a new name.</description>
 <wire x1="11.371" y1="46.314" x2="13.208" y2="46.089" width="0" layer="19" extent="1-1"/>
 <wire x1="11.371" y1="45.664" x2="11.371" y2="46.314" width="0" layer="19" extent="1-1"/>
 <wire x1="11.291" y1="48.133" x2="11.371" y2="46.314" width="0" layer="19" extent="1-1"/>
-<wire x1="9.271" y1="45.339" x2="11.371" y2="45.664" width="0" layer="19" extent="1-1"/>
-<wire x1="7.171" y1="46.314" x2="9.271" y2="45.339" width="0" layer="19" extent="1-1"/>
-<wire x1="7.171" y1="44.364" x2="7.171" y2="46.314" width="0" layer="19" extent="1-1"/>
-<wire x1="17.399" y1="37.719" x2="20.447" y2="39.382" width="0" layer="19" extent="1-1"/>
+<wire x1="17.399" y1="37.719" x2="20.447" y2="36.703" width="0" layer="19" extent="1-1"/>
 <wire x1="26.035" y1="36.08" x2="26.374" y2="39.797" width="0" layer="19" extent="1-1"/>
-<wire x1="16.764" y1="33.77" x2="21.094" y2="31" width="0" layer="19" extent="1-1"/>
+<wire x1="16.764" y1="33.77" x2="17.399" y2="37.719" width="0" layer="19" extent="1-1"/>
 <wire x1="14.597" y1="32.425" x2="16.764" y2="33.77" width="0" layer="19" extent="1-1"/>
 <wire x1="14.097" y1="32.425" x2="14.597" y2="32.425" width="0" layer="19" extent="1-1"/>
 <wire x1="11.557" y1="34.175" x2="14.097" y2="32.425" width="0" layer="19" extent="1-1"/>
@@ -1204,6 +1197,8 @@ design rules under a new name.</description>
 <wire x1="5.223" y1="32.679" x2="6.223" y2="32.679" width="0" layer="19" extent="1-1"/>
 <wire x1="3.556" y1="33.389" x2="5.223" y2="32.679" width="0" layer="19" extent="1-1"/>
 <wire x1="3.556" y1="34.937" x2="3.556" y2="33.389" width="0" layer="19" extent="1-1"/>
+<wire x1="7.171" y1="46.314" x2="11.371" y2="46.314" width="0" layer="19" extent="1-1"/>
+<wire x1="7.171" y1="44.364" x2="7.171" y2="46.314" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V">
 <contactref element="U1" pad="4"/>
@@ -1783,8 +1778,8 @@ design rules under a new name.</description>
 <wire x1="42.545" y1="15.99" x2="44.135" y2="16.5401" width="0" layer="19" extent="1-1"/>
 <wire x1="16.764" y1="32.27" x2="36.83" y2="24.245" width="0" layer="19" extent="1-1"/>
 <wire x1="15.097" y1="32.425" x2="16.764" y2="32.27" width="0" layer="19" extent="1-1"/>
-<wire x1="13.597" y1="37.425" x2="15.097" y2="32.425" width="0" layer="19" extent="1-1"/>
-<wire x1="17.399" y1="35.941" x2="13.597" y2="37.425" width="0" layer="19" extent="1-1"/>
+<wire x1="17.399" y1="35.941" x2="16.764" y2="32.27" width="0" layer="19" extent="1-1"/>
+<wire x1="13.597" y1="37.425" x2="17.399" y2="35.941" width="0" layer="19" extent="1-1"/>
 <wire x1="8.763" y1="36.691" x2="13.597" y2="37.425" width="0" layer="19" extent="1-1"/>
 <wire x1="7.223" y1="37.679" x2="8.763" y2="36.691" width="0" layer="19" extent="1-1"/>
 <wire x1="6.723" y1="37.679" x2="7.223" y2="37.679" width="0" layer="19" extent="1-1"/>
